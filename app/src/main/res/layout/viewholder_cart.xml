@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/checkout_picCard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iphone12" />
+
+    <ImageView
+        android:id="@+id/cart_delete_item"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/checkout_picCard"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkout_picCard" />
+
+    <TextView
+        android:id="@+id/checkout_namePrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="title"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkout_picCard"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/minusCardBtn"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkout_picCard"
+        app:layout_constraintStart_toEndOf="@+id/checkout_picCard"
+        app:srcCompat="@drawable/minus" />
+
+    <TextView
+        android:id="@+id/checkout_numItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCardBtn"
+        app:layout_constraintStart_toEndOf="@+id/minusCardBtn"
+        app:layout_constraintTop_toTopOf="@+id/minusCardBtn" />
+
+    <ImageView
+        android:id="@+id/plusCardBtn"
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCardBtn"
+        app:layout_constraintStart_toEndOf="@+id/checkout_numItem"
+        app:layout_constraintTop_toTopOf="@+id/minusCardBtn"
+        app:srcCompat="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/checkout_feeEachItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="0"
+        android:textColor="#373b54"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkout_totalEachItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/checkout_totalEachItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/plusCardBtn"
+        app:layout_constraintEnd_toEndOf="@+id/checkout_feeEachItem"
+        app:layout_constraintTop_toTopOf="@+id/plusCardBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

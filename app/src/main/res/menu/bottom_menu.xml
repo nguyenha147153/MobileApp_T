@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mnu_index"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/mnu_products"
+        android:title="Sản Phẩm"
+        android:icon="@drawable/ic_smartphone"/>
+
+    <item
+        android:id="@+id/mnu_profile"
+        android:title="Tài khoản"
+        android:icon="@drawable/ic_person"/>
+
+    <item
+        android:id="@+id/mnu_history"
+        android:title="Lịch sử mua hàng"
+        android:icon="@drawable/ic_history"/>
+    <item
+        android:id="@+id/mnu_setting"
+        android:title="Cài đặt"
+        android:icon="@drawable/ic_setting"/>
+</menu>

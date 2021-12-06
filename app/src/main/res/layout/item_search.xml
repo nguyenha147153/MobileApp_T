@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp">
+
+    <ImageView
+        android:id="@+id/search_phone_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/iphone12"></ImageView>
+
+    <TextView
+        android:id="@+id/search_name_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/search_phone_image"
+        android:text="Iphone 12 128GB chính hãng (VN/A)"
+        android:textColor="#212121"
+        android:textSize="15sp"></TextView>
+
+    <TextView
+        android:id="@+id/search_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_name_phone"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/search_phone_image"
+        android:text="20.000.000 VND"
+        android:textColor="#E2FA1F1F"
+        android:textSize="15sp"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/search_phone_image"
+        android:background="#212121">
+    </View>
+
+</RelativeLayout>
